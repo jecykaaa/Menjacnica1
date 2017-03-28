@@ -1,11 +1,11 @@
 package valute;
 
 public class Valute {
-	String naziv;
-	String skraceniNaziv;
-	double prodajniKurs;
-	double kupovniKurs;
-	double srednjiKurs;
+	private String naziv;
+	private String skraceniNaziv;
+	private double prodajniKurs;
+	private double kupovniKurs;
+	private double srednjiKurs;
 	
 	public String getNaziv() {
 		return naziv;
