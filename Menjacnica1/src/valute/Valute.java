@@ -136,6 +136,5 @@ public class Valute {
 		return "Valute [naziv=" + naziv + ", skraceniNaziv=" + skraceniNaziv + ", prodajniKurs=" + prodajniKurs
 				+ ", kupovniKurs=" + kupovniKurs + ", srednjiKurs=" + srednjiKurs + ", datum=" + datum + "]";
 	}
-	
-	
+		
 }
