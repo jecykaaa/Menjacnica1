@@ -45,7 +45,6 @@ public class Menjacnica implements MenjacnicaInterfejs {
 
 	
 	public Valute pronadjiIVratiKursValuteZaOdredjeniDan(GregorianCalendar datum) {
-		Valute valuta = new Valute();
 		try {
 			for (int i = 0; i < valute.size(); i++) {
 				if(valute.get(i).getDatum() == datum)
