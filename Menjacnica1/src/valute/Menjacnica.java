@@ -12,6 +12,7 @@ public class Menjacnica implements MenjacnicaInterfejs {
 		try {
 			valuta = new Valute(naziv, skraceniNaziv, prodajni, kupovni, srednji, datum);
 			valute.add(valuta);
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

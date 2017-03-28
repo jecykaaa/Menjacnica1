@@ -10,7 +10,6 @@ public class Valute {
 	private double srednjiKurs;
 	private GregorianCalendar datum;
 	
-	
 	public Valute(String naziv, String skraceniNaziv, double prodajniKurs, double kupovniKurs, double srednjiKurs,
 			GregorianCalendar datum) {
 		super();
@@ -31,7 +30,7 @@ public class Valute {
 		}
 		this.datum = datum;
 	}
-	
+
 	public String getNaziv() {
 		return naziv;
 	}
@@ -77,10 +76,7 @@ public class Valute {
 		}
 		this.srednjiKurs = srednjiKurs;
 	}
-	
-	
-	
-	@Override
+
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
@@ -97,8 +93,7 @@ public class Valute {
 		return result;
 	}
 	
-	
-	@Override
+
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
@@ -131,7 +126,6 @@ public class Valute {
 		return true;
 	}
 	
-	@Override
 	public String toString() {
 		return "Valute [naziv=" + naziv + ", skraceniNaziv=" + skraceniNaziv + ", prodajniKurs=" + prodajniKurs
 				+ ", kupovniKurs=" + kupovniKurs + ", srednjiKurs=" + srednjiKurs + ", datum=" + datum + "]";
