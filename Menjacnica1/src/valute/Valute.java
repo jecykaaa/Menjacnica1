@@ -137,4 +137,5 @@ public class Valute {
 				+ ", kupovniKurs=" + kupovniKurs + ", srednjiKurs=" + srednjiKurs + ", datum=" + datum + "]";
 	}
 		
+	
 }
