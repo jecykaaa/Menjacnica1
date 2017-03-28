@@ -1,11 +1,36 @@
 package valute;
 
+import java.util.GregorianCalendar;
+
 public class Valute {
 	private String naziv;
 	private String skraceniNaziv;
 	private double prodajniKurs;
 	private double kupovniKurs;
 	private double srednjiKurs;
+	private GregorianCalendar datum;
+	
+	
+	public Valute(String naziv, String skraceniNaziv, double prodajniKurs, double kupovniKurs, double srednjiKurs,
+			GregorianCalendar datum) {
+		super();
+		this.naziv = naziv;
+		this.skraceniNaziv = skraceniNaziv;
+		this.prodajniKurs = prodajniKurs;
+		this.kupovniKurs = kupovniKurs;
+		this.srednjiKurs = srednjiKurs;
+		this.datum = datum;
+	}
+	
+	public GregorianCalendar getDatum() {
+		return datum;
+	}
+	public void setDatum(GregorianCalendar datum) throws Exception {
+		if(datum == null) {
+			throw new Exception();
+		}
+		this.datum = datum;
+	}
 	
 	public String getNaziv() {
 		return naziv;
@@ -55,9 +80,11 @@ public class Valute {
 	
 	
 	
+	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result + ((datum == null) ? 0 : datum.hashCode());
 		long temp;
 		temp = Double.doubleToLongBits(kupovniKurs);
 		result = prime * result + (int) (temp ^ (temp >>> 32));
@@ -80,6 +107,11 @@ public class Valute {
 		if (!(obj instanceof Valute))
 			return false;
 		Valute other = (Valute) obj;
+		if (datum == null) {
+			if (other.datum != null)
+				return false;
+		} else if (!datum.equals(other.datum))
+			return false;
 		if (Double.doubleToLongBits(kupovniKurs) != Double.doubleToLongBits(other.kupovniKurs))
 			return false;
 		if (naziv == null) {
@@ -99,9 +131,10 @@ public class Valute {
 		return true;
 	}
 	
+	@Override
 	public String toString() {
 		return "Valute [naziv=" + naziv + ", skraceniNaziv=" + skraceniNaziv + ", prodajniKurs=" + prodajniKurs
-				+ ", kupovniKurs=" + kupovniKurs + ", srednjiKurs=" + srednjiKurs + "]";
+				+ ", kupovniKurs=" + kupovniKurs + ", srednjiKurs=" + srednjiKurs + ", datum=" + datum + "]";
 	}
 	
 	
