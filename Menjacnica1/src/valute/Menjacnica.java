@@ -4,21 +4,21 @@ import java.util.GregorianCalendar;
 
 public class Menjacnica implements MenjacnicaInterfejs {
 
-	@Override
-	public void dodajKursValuteZaOdredjeniDan(double kurs, GregorianCalendar datum) {
-		// TODO Auto-generated method stub
+	
+	public void dodajKursValuteZaOdredjeniDan(double prodajni, double kupovni, double srednji, GregorianCalendar datum) {
+		
 
 	}
 
-	@Override
-	public void obrisiKursValuteZaOdredjeniDan(double kurs, GregorianCalendar datum) {
-		// TODO Auto-generated method stub
+
+	public void obrisiKursValuteZaOdredjeniDan(double prodajni, double kupovni, double srednji, GregorianCalendar datum) {
+		
 
 	}
 
-	@Override
-	public double pronadjiIVratiKursValuteZaOdredjeniDan(double kurs, GregorianCalendar datum) {
-		// TODO Auto-generated method stub
+	
+	public double pronadjiIVratiKursValuteZaOdredjeniDan(double prodajni, double kupovni, double srednji, GregorianCalendar datum) {
+		
 		return 0;
 	}
 
