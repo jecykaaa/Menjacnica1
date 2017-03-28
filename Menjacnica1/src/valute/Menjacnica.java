@@ -18,7 +18,6 @@ public class Menjacnica implements MenjacnicaInterfejs {
 		}
 	}
 
-
 	public void obrisiKursValuteZaOdredjeniDan(String naziv, String skraceniNaziv, double prodajni, double kupovni, double srednji, GregorianCalendar datum) {
 		Valute valuta;
 		try {
@@ -32,7 +31,6 @@ public class Menjacnica implements MenjacnicaInterfejs {
 			e.printStackTrace();
 		}
 	}
-
 	
 	public Valute pronadjiIVratiKursValuteZaOdredjeniDan(GregorianCalendar datum) {
 		try {

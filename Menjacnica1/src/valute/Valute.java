@@ -24,6 +24,7 @@ public class Valute {
 	public GregorianCalendar getDatum() {
 		return datum;
 	}
+	
 	public void setDatum(GregorianCalendar datum) throws Exception {
 		if(datum == null) {
 			throw new Exception();
@@ -34,15 +35,18 @@ public class Valute {
 	public String getNaziv() {
 		return naziv;
 	}
+	
 	public void setNaziv(String naziv) throws Exception {
 		if(naziv.isEmpty() || naziv == null) {
 			throw new Exception();
 		}
 		this.naziv = naziv;
 	}
+	
 	public String getSkraceniNaziv() {
 		return skraceniNaziv;
 	}
+	
 	public void setSkraceniNaziv(String skraceniNaziv) throws Exception {
 		if(skraceniNaziv.isEmpty() || skraceniNaziv == null) {
 			throw new Exception();
@@ -67,9 +71,11 @@ public class Valute {
 		}
 		this.kupovniKurs = kupovniKurs;
 	}
+	
 	public double getSrednjiKurs() {
 		return srednjiKurs;
 	}
+	
 	public void setSrednjiKurs(double srednjiKurs) throws Exception {
 		if(srednjiKurs <= 0) {
 			throw new Exception();
